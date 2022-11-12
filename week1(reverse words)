@@ -1,0 +1,15 @@
+class Solution(object):
+    def reverseWords(self, s):
+        s = "Let's take LeetCode contest"
+        a= "python"
+        s= s.split()
+        a= s[0]
+        d= a[len(a)::-1]
+        a = s[1]
+        d = d +" "+ a[len(a)::-1]
+        a = s[2]
+        d = d + " " + a[len(a)::-1]
+        a= s[3]
+        d = d + " " + a[len(a)::-1]
+
+        print("\"" + d + "\"")
